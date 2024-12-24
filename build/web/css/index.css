@@ -1,0 +1,338 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #003049;
+    background-color: #FDF0D5;
+}
+
+/* Header */
+header {
+    background-color: #003049;
+    color: #FDF0D5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+ header .logo {
+    font-size: 1.5em;
+    font-weight:bold;
+    color: #FDF0D5;
+}
+
+header nav {
+    display: flex;
+    gap: 1em;
+}
+
+header nav a {
+    color: #FDF0D5;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+header nav a.btn {
+    background-color: #C1121F;
+    border-radius: 5px;
+}
+
+header nav a:hover {
+    color: #669BBC;
+}
+
+/* Search Section */
+.search-section {
+    background-color: #C1121F;
+    color: #FDF0D5;
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.search-section h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #FDF0D5;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-box input, .search-box select, .search-box button {
+    padding: 0.8em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box input[type="text"], .search-box input[type="date"], .search-box select {
+    flex: 1;
+}
+
+.search-box button {
+    background-color: #780000;
+    color: #FDF0D5;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #669BBC;
+}
+
+/* Advertisement Section */
+.advertisement-section {
+    display: flex;
+    align-items: center;
+    padding: 2em 1em;
+    gap: 2em;
+    background-color: #FDF0D5;
+    color: #003049;
+    flex-wrap: wrap;
+}
+
+.advertisement-section .content {
+    flex: 1;
+    text-align: center;
+}
+
+.advertisement-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    color: #C1121F;
+}
+
+.advertisement-section p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.advertisement-section button {
+    padding: 0.8em 1.5em;
+    background-color: #780000;
+    color: #FDF0D5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.advertisement-section button:hover {
+    background-color: #669BBC;
+}
+
+.advertisement-section .image {
+    flex: 1;
+    text-align: center;
+}
+
+.advertisement-section .image img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+
+/* Locations Section */
+.locations-section {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.locations-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.carousel {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    max-width: 660px; /* Allows only 3 items of 200px each with gaps */
+    margin-left:200px; /* Center the carousel */
+}
+
+.carousel-item {
+    width:350px; /* Fixed width to show only 3 items within the 660px container */
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    border: 4px solid #FF9F1C; /* Orange border */
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-item span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #333; /* Dark gray background for the footer */
+    color: #f5f5f5;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1 1 150px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    color: #FDF0D5;; /* Yellow color for headings */
+}
+
+.footer-column hr {
+    width: 50px;
+    border: none;
+    border-top: 2px solid #FFC107;
+    margin: 8px 0 12px;
+}
+
+.footer-column a, .footer-column p {
+    display: block;
+    color: #f5f5f5;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #FFC107; /* Yellow on hover */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media, .app-download {
+    text-align: center;
+}
+
+.social-media h3, .app-download h3 {
+    font-size: 18px;
+    color: #FFC107;
+}
+
+.social-media hr, .app-download hr {
+    width: 50px;
+    border-top: 2px solid #FFC107;
+    margin: 8px auto 12px;
+}
+
+.social-media .icon {
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 50px;
+    color:#780000
+}
+
+.social-media .icon i {
+    width: 100%;
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .advertisement-section {
+        flex-direction: column;
+    }
+
+    .advertisement-section .content, .advertisement-section .image {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+}

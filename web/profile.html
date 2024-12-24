@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+
+       <!-- Header -->
+       <header>
+           <div class="logo"><a href="home.html">GoWheels<a></div>
+        <nav>
+            
+            <a href="#">Locations</a>
+            <a href="bikes.html">Bikes & Services</a>
+            <!-- User Profile Dropdown -->
+            <div class="profile-container">
+                <img src="img/profile.png" alt="Profile Picture" class="profile-pic" onclick="toggleDropdown()">
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="profile-info">
+                        <div class="profile-icon"></div>
+                        <p>0+ Rides Taken</p>
+                    </div>
+                    <div class="menu-option" onclick="goToProfile()">Profile</div>
+                    <div class="menu-option" onclick="goToBookings()">Bookings</div>
+                    <div class="menu-option logout" onclick="logout()">Logout</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Profile Display Section -->
+        <div class="profile-section">
+            <h2>Profile</h2>
+            <div class="profile-info">
+                <div class="profile-image">
+                    <img src="img/profile.png" alt="Profile Picture">
+                </div>
+                <div class="profile-details">
+                    
+                    <p><strong>UserName:</strong> <span id="fullName" name="fullname"></span></p>
+                    <p><strong>Mobile No:</strong> <span id="mobileNo" name="mobileNo"></span></p>
+                    <p><strong>Email:</strong> <span id="email" name="email"></span></p>
+                   
+                </div>
+            </div>
+        </div>
+    <script src="js/profile.js"></script>
+</body>
+</html>

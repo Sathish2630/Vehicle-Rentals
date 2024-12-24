@@ -1,0 +1,83 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf0d5; /* Light cream background */
+    margin: 0;
+    padding: 0;
+}
+
+.back-arrow {
+    font-size: 1.2rem;
+    color: #003049; /* Dark blue */
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #669bbc; /* Light blue background */
+    transition: background-color 0.3s;
+}
+
+.back-arrow:hover {
+    background-color: #003049; /* Dark blue on hover */
+    color: #fdf0d5; /* Light cream text */
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    color: #003049; /* Dark blue text */
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #780000; /* Dark red */
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.about-content h2::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #c1121f; /* Bright red circle */
+    border-radius: 50%;
+    position: absolute;
+    left: -70px;
+    top: 0;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #003049; /* Dark blue */
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}

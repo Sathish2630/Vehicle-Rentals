@@ -1,0 +1,93 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf0d5; /* light cream background */
+    margin: 0;
+    padding: 0;
+}
+
+/*Arrow*/
+.back-arrow {
+    font-size: 1.2rem;
+    color: #003049; /* Dark blue */
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #669bbc; /* Light blue background */
+    transition: background-color 0.3s;
+}
+
+.back-arrow:hover {
+    background-color: #003049; /* Dark blue on hover */
+    color: #fdf0d5; /* Light cream text */
+}
+/*Arrow*/
+
+.blog-section {
+    padding: 20px;
+    text-align: center;
+    color: #003049; /* dark blue text */
+}
+
+.blog-section h2 {
+    font-size: 2rem;
+    color: #780000; /* dark red */
+    margin-bottom: 20px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-card {
+    background-color: #fdf0d5; /* light cream */
+    border: 1px solid #c1121f; /* bright red border */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-card h3 {
+    font-size: 1.25rem;
+    color: #780000; /* dark red */
+    margin: 10px 0;
+}
+
+.blog-card p {
+    color: #003049; /* dark blue text */
+    padding: 0 10px 10px;
+    font-size: 0.9rem;
+}
+
+.see-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fdf0d5; /* light cream text */
+    background-color: #003049; /* dark blue background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.see-more-btn:hover {
+    background-color: #669bbc; /* light blue hover */
+}
